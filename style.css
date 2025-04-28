@@ -1,0 +1,88 @@
+/* Full page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered container box */
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+/* Heading style */
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Password input wrapper */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Password toggle button */
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 0;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Links */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

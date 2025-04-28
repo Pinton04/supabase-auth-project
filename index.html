@@ -1,0 +1,32 @@
+<body>
+    <div class="container">
+      <h2>Register</h2>
+      <input type="email" id="register-email" placeholder="Email">
+      <div class="password-wrapper">
+        <input type="password" id="register-password" placeholder="Password">
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+      <button onclick="signUp()">Register</button>
+      <p><a href="login.html">Already have an account? Login</a></p>
+    </div>
+  
+    <!-- Link to CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+  
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="auth.js"></script>
+    <script>
+      function togglePassword() {
+        const passwordInput = document.getElementById('register-password');
+        const toggleIcon = document.querySelector('.toggle-password');
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          toggleIcon.textContent = '🙈';
+        } else {
+          passwordInput.type = 'password';
+          toggleIcon.textContent = '👁️';
+        }
+      }
+    </script>
+  </body>
+  
